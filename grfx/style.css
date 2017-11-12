@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: arial;
+}
+
+body {
+    background-color: #131211;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#nav {
+  background-color: #442519;
+  background: linear-gradient(to bottom, rgba(68,37,25,1) 0%, rgba(68,37,25,1) 87%, rgba(255, 255, 255, 0) 100%);
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+#navUl {
+  list-style: none;
+  margin: auto;
+  width: 30%;
+  text-align: center;
+  /* padding: 10px 0; */
+}
+
+.listItemLink {
+  display: inline-block;
+  margin: 0 15px;
+  text-transform: capitalize;
+}
+
+.listItem {
+
+}
+
+.bigBanner {
+  height: 170px;
+  width: 100%;
+  background-image: url(../img/home-banner.jpg);
+  background-position: center;
+  z-index: -1;
+  margin-top: 32px;
+  position: relative;
+  padding: 15px 0;
+}
+
+#jobsBluredBanner {
+  height: 170px;
+  width: 100%;
+  background-image: url(../subPages/jobs/img/jobs-banner.jpg);
+  background-position: center;
+  z-index: -2;
+  margin-top: 32px;
+  position: relative;
+  padding: 15px 0;
+  transition: 1s ease-in;
+  background-size: cover;
+  filter: blur(10px);
+}
+
+#jobsBanner {
+  height: 170px;
+  width: 100%;
+  background-image: url(../subPages/jobs/img/jobs-banner.jpg);
+  background-position: center;
+  z-index: -1;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  padding: 15px 0;
+  transition: 1s ease-in;
+  background-size: 50%;
+  filter: none;
+  background-repeat: no-repeat;
+}
+
+#overlay {
+  width: 170px;
+  position: absolute;
+  margin-left: 50%;
+  left: -85px;
+}
+
+#main {
+width: 100%;
+/* min-height: 400px; */
+display: flex;
+background-color: #131211;
+}
+
+.contentCol {
+  width: 50%;
+  background-color: rgb(19, 18, 17);
+  padding: 20px 40px;
+  box-sizing: border-box;
+  margin: 40px 0;
+  position: relative;
+}
+
+#contentCol1 {
+  border-right: 1px solid black;
+}
+
+#contentCol2 {
+  border-left: 1px solid black;
+}
+
+#contentCol2 > h2 {
+    margin-bottom: 45px;
+}
+
+.contentColH2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contentCol > p , h3 , a , li {
+    color: white;
+    margin: 10px;
+    margin-left: 0;
+}
+
+.contentCol > img {
+  width: 200px;
+}
+
+#map {
+  width: 100%;
+  margin-top: 30px;
+}
+
+#over-oudeman {
+  position: absolute;
+  margin-left: 50%;
+  left: -100px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chavez - Espressobar</title>
+    <link rel="stylesheet" href="../../grfx/style.css">
+    <script>
+      var imageUrl = ["url(img/jobs-banner.jpg)", "url(img/jobs-banner2.jpg)", "url(img/jobs-banner3.jpg)"];
+      var imageCount = "1";
+      var test = window.setInterval(function() {
+        document.getElementById("jobsBluredBanner").style.backgroundImage=imageUrl[imageCount];
+        document.getElementById("jobsBanner").style.backgroundImage=imageUrl[imageCount];
+        imageCount++;
+        if (imageCount > 2) {
+          imageCount = 0;
+        }
+      }, 3000);
+      //window.clearInterval(test);
+    </script>
+  </head>
+  <body>
+    <nav id="nav">
+      <ul id="navUl">
+        <a class="listItemLink" href="../../index.html"> <li class="listItem">home</li> </a>
+        <a class="listItemLink" href="../over/over.html"> <li class="listItem">over</li> </a>
+        <a class="listItemLink" href="#"> <li class="listItem">jobs</li> </a>
+        <a class="listItemLink" href="../contact/contact.html"> <li class="listItem">contact</li> </a>
+      </ul>
+    </nav>
+    <div id="jobsBluredBanner">
+      <img src="img/jobs-banner.jpg" alt="jobs banner prelode" style="display: none;">
+      <img src="img/jobs-banner2.jpg" alt="jobs banner prelode" style="display: none;">
+      <img src="img/jobs-banner3.jpg" alt="jobs banner prelode" style="display: none;">
+    </div>
+    <div id="jobsBanner"></div>
+    <main id="main">
+      <section class="contentCol" id="contentCol1">
+        <h2 class="contentColH2">WERKEN BIJ ESPRESSOBAR CHAVEZ</h2>
+        <p>Espressobar Chavez is als een tweede huiskamer.</p>
+        <p>Ons horeca-concept draait om koffie, health, genieten en gezelligheid. Floreer jij in zo’n ongedwongen sfeer en bezorg jij anderen graag een fijn moment in zijn of haar dag? Is koffie jouw middle name? Dan zou je zomaar in ons team kunnen passen.</p>
+        <p>Scroll verder voor de vacatures of stuur ons een open sollicitatie.</p>
+        <img src="img/jobs-photo1.jpg" alt="jobs photo 1">
+        <img src="img/jobs-photo2.jpg" alt="jobs photo 2">
+        <img src="img/jobs-photo3.jpg" alt="jobs photo 2">
+        <img src="img/jobs-photo4.jpg" alt="jobs photo 2">
+      </section>
+      <section class="contentCol" id="contentCol2">
+        <h2 class="contentColH2">WIL JE WERKEN BIJ ESPRESSOBAR CHAVEZ? DAN IS DIT WAT WE VAN JE VERWACHTEN:</h2>
+        <ul>
+          <li>- Jij wilt gasten een fijn moment in hun dag bezorgen. Iedere klant, iedere dag weer.	</li>
+          <li>- Flexibele werktijden zijn voor jou geen probleem.	</li>
+          <li>- Je pakt zaken met passie aan.	</li>
+          <li>- Je snapt ons concept en draagt het graag uit.	</li>
+          <li>- Niet alleen de gasten, maar ook je collega’s kunnen rekenen op jouw glimlach.</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
